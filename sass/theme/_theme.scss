@@ -1,6 +1,10 @@
+html {
+scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300; //medium: 500 - black: 900
     background-color: $light;
     color: $dark;
@@ -10,12 +14,7 @@ body{
 b{font-weight: 500;}
 strong{font-weight: 500;}
 
-h1{color:$secondary; font-weight: 900;}
-h2{color:$secondary; font-weight: 900;}
-h3{color:$secondary; font-weight: 900;}
-h4{color:$secondary; font-weight: 900;}
-h5{color:$secondary; font-weight: 900;}
-h6{color:$secondary; font-weight: 900;}
+h1,h2,h3,h4,h5,h6{text-transform: uppercase; font-family: 'Yanone Kaffeesatz', sans-serif; color:$secondary; font-weight: 900;}
 
 .py-6 {padding: 4rem 0;}
 .py-7 {padding: 5.5rem 0;}
@@ -35,6 +34,11 @@ label{
 
 .btn-primary{
     color: $white !important;
+}
+.logo-svg{
+    width: 90px;
+    height: 90px;
+    background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/logo.svg");
 }
 
 //************************************************************
@@ -59,7 +63,7 @@ label{
     padding: 0;
     width: 30px;
     height: 3px;
-    background-color: $white;
+    background-color: $primary;
     display: block;
     border-radius: 4px;
     transition: all 0.5s ease-in-out;
@@ -114,10 +118,20 @@ label{
     width: 42px;
 }
 
-.navbar{
-    background-color: $primary;
-}
+
 .navbar-toggler {
     border: inherit !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $secondary;
+}
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color: $primary;
+    border-bottom: 2px solid $primary;
+}
+
+
+.nav-link{
+    font-weight: 700;
 }
 //************************************************************
