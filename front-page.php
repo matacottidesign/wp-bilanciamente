@@ -47,9 +47,18 @@ get_header();
     </div>
 </div>
 
+<div id="service" class="row mx-0 text-center">
+    <!--BOX-1-->
+    <div class="schede col-12 col-lg-4 p-5" style="background-color: #e9dfdd;">
+        
+        <div>
+            <?php 
+        $image = get_field('icona_blog');
+        if( !empty( $image ) ): ?>
+            <img class="icona-img-home pb-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+        </div>
 
-<div id="service" class="row text-center">
-    <div class="schede col-12 col-md-4 p-5" style="background-color: #e9dfdd;">
         <h2><?php the_field('titolo_blog'); ?></h2>
         <div class="d-flex justify-content-center">
             <div class="hbar mb-4"></div>
@@ -66,6 +75,7 @@ get_header();
                 <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
             <?php endif; ?>
         </button>
+
         <div>
             <?php 
         $image = get_field('immagine_blog');
@@ -74,7 +84,16 @@ get_header();
         <?php endif; ?>
         </div>
     </div>
-    <div class="schede col-12 col-md-4 p-5" style="background-color: #d1d6e6;">
+    <!--BOX-2-->
+    <div class="schede col-12 col-lg-4 p-5" style="background-color: #d1d6e6;">
+        <div>
+            <?php 
+        $image = get_field('icona_libri');
+        if( !empty( $image ) ): ?>
+            <img class="icona-img-home pb-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+        </div>
+
         <h2><?php the_field('titolo_libri'); ?></h2>
         <div class="d-flex justify-content-center">
             <div class="hbar mb-4"></div>
@@ -91,6 +110,7 @@ get_header();
                 <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
             <?php endif; ?>
         </button>
+
         <div>
         <?php 
         $image = get_field('immagine_libri');
@@ -99,7 +119,16 @@ get_header();
         <?php endif; ?>
         </div>
     </div>
-    <div class="schede col-12 col-md-4 p-5" style="background-color: #6adbe2;">
+    <!--BOX-3-->
+    <div class="schede col-12 col-lg-4 p-5" style="background-color: #6adbe2;">
+        <div>
+            <?php 
+        $image = get_field('icona_esercizi');
+        if( !empty( $image ) ): ?>
+            <img class="icona-img-home pb-3" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+        </div>
+
         <h2><?php the_field('titolo_esercizi'); ?></h2>
         <div class="d-flex justify-content-center">
             <div class="hbar mb-4"></div>
@@ -116,6 +145,7 @@ get_header();
                 <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
             <?php endif; ?>
         </button>
+
         <div>
         <?php 
         $image = get_field('immagine_esercizi');
@@ -124,6 +154,11 @@ get_header();
         <?php endif; ?>
         </div>
     </div>
+</div>
+
+<div class="container">
+    <h3>"Non smettiamo di giocare perchè siamo vecchi; invecchiamo perchè smettiamo di giocare"</h3>
+    <small>George Bernard</small>
 </div>
 
 

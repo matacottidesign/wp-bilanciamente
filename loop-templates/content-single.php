@@ -23,9 +23,9 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<?php echo get_the_post_thumbnail( $post->ID, 'large w-100' ); ?>
 
-	<div class="entry-content">
+	<div class="entry-content pb-8">
 
 		<?php the_content(); ?>
 

@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6{text-transform: uppercase; font-family: 'Yanone Kaffeesatz', s
 .pb-8 {padding-bottom: 6rem;}
 
 ul{list-style: none; padding-left: 0; margin-bottom: 0;}
-
+a:hover{text-decoration: none;}
 label{
     margin-bottom: 0;
 }
@@ -41,6 +41,11 @@ label{
     background-image: url("<?php echo get_template_directory_uri(); ?>/../../img/logo.svg");
 }
 
+@keyframes jump{
+	to { 
+        transform: translate(0px, 10px); 
+    }
+}
 //************************************************************
 //NAVBAR
 
@@ -154,20 +159,30 @@ label{
     width: 50px;
     background-color: $primary;
 }
+.bi-arrow-down{
+    animation: jump 0.7s infinite alternate;
+}
 //************************************************************
 //************************************************************
 //HOME-PAGE
 .scheda{
     height: 1000px;
+    width: 100%;
 }
 .btn{
-    background-color: $purple;
+    background-color: $warning;
+    transition: 0.3s;
     a{
-        color: $white !important;
+        color: $primary;
     }
+}
+
+.icona-img-home{
+    width: 50px;
 }
 .img-home{
     height: 400px;
+    transition: 1.5s;
 }
 
 .schede{
@@ -176,6 +191,136 @@ label{
 .schede:hover{
     background-color: $light !important;
     transition: 0.5s;
+    button{
+        &.btn{
+            animation: jump 0.7s infinite alternate;
+            background-color: $primary;
+            a{
+                color: $white;
+            }
+        }
+    }
+    div{
+        img{
+            &.img-home{
+                transform: translate(20px, 0px); 
+            }
+        }
+    }
+}
+//************************************************************
+//************************************************************
+//ARTICOLI
+.widget{
+    padding-bottom: 3rem;
+    ul{
+        li{
+            line-height: 2.5;
+            list-style: inside;
+        }
+    }
+}
+.indice-articolo{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    li{
+        line-height: 2.5;
+    }
+}
+.entry-content{
+    font-size: 20px;
+    line-height: 2;
+}
+
+.sticky-top{
+    aside{
+        padding: 25px;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #ecdc94;
+        background-clip: border-box;
+        //border: 1px solid rgba(0,0,0,.125);
+        border-radius: .25rem;
+        transition: 0.3s;
+        margin-bottom: 1rem;
+    }
+}
+
+.comments-area{
+    padding: 3rem 0;
+}
+.comment-body{
+    padding: 25px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #9ce5eb;
+    background-clip: border-box;
+    //border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.type-post{
+    padding: 25px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #e9dfdd;
+    background-clip: border-box;
+    //border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+
+    img{
+        width: 100%;
+        border-radius: .25rem;
+        margin-bottom: 1rem;
+    }
+
+    .entry-content{
+        .addtoany_share_save_container{
+            text-align: right !important;
+        }
+    }
+    footer{
+        text-align: right;
+    }
+}
+.type-post:hover{
+    .entry-content{
+        p{
+            a{
+                animation: jump 0.7s infinite alternate;
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+
+.understrap-read-more-link{
+    color: $primary;
+    margin-top: 1rem;
+}
+.understrap-read-more-link:hover{
+    background-color: $primary;
+    color: $white;
 }
 //************************************************************
 
