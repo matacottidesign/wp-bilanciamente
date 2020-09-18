@@ -221,7 +221,6 @@ label{
     }
 }
 .indice-articolo{
-    margin-top: 3rem;
     margin-bottom: 3rem;
     li{
         line-height: 2.5;
@@ -296,6 +295,8 @@ label{
     .entry-content{
         .addtoany_share_save_container{
             text-align: right !important;
+            margin: 0;
+            padding: 0;
         }
     }
     footer{
