@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->
-					<a href="#">
+					<a href="localhost:8888/wp-bilanciamente/">
 						<div class="logo-svg"></div>
 					</a>
 				

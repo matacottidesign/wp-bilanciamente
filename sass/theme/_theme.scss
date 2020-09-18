@@ -323,4 +323,13 @@ label{
     color: $white;
 }
 //************************************************************
+.wrapper{
+    padding: 0;
+}
 
+.footer-col{
+    color: $gray-600;
+    h3{
+        color: $secondary;
+    }
+}
