@@ -120,7 +120,7 @@ get_header();
         </div>
     </div>
     <!--BOX-3-->
-    <div class="schede col-12 col-lg-4 p-5" style="background-color: #6adbe2;">
+    <div class="schede col-12 col-lg-4 p-5" style="background-color: #ecdc94;">
         <div>
             <?php 
         $image = get_field('icona_esercizi');

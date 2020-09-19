@@ -20,9 +20,19 @@ function parallax(e){
         const x = (window.innerWidth - e.pageX*speed)/150
         const y = (window.innerHeight - e.pageY*speed)/50
 
-        console.log(x);
-        console.log(y);
-
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
+}
+
+//STICKY-TOP PADDING
+let widgetCol = document.getElementById('right-widget-col');
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function(){
+    let currentScrollpos = window.pageYOffset;
+    if(prevScrollpos < currentScrollpos){
+        widgetCol.style.paddingTop = "120px";
+    } else if (currentScrollpos === 0) {
+        widgetCol.style.paddingTop = "0px";
+    }
+    prevScrollpos = currentScrollpos;
 }
