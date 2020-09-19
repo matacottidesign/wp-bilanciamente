@@ -225,22 +225,24 @@ label{
 .category-link{
     .category-card{
         height: 205px;
-        border: 1px solid $primary;
+        border: 1px solid $secondary;
         border-radius: .25rem;
         transition: 0.3s;
+        div{
+            img{
+                width: 40px;
+                height: 40px;
+                color: $secondary;
+            }
+            h3{
+                color: #000;
+            }
+        }
     }
 }
 .category-link:hover{
     .category-card{
-        background-color: $primary;
-        div{
-            svg{
-                color: $white;
-            }
-            h3{
-                color: $white;
-            }
-        }
+        background-color: $secondary;
     }
 }
 //************************************************************
