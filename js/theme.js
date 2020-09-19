@@ -7041,7 +7041,6 @@ window.onscroll = function () {
 
   if (prevScrollpos < currentScrollpos) {
     widgetCol.style.paddingTop = "120px";
-    widgetCol.style.paddingBottom = "10px";
   } else if (currentScrollpos === 0) {
     widgetCol.style.paddingTop = "0px";
   }

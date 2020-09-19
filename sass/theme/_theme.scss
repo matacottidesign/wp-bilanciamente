@@ -285,7 +285,7 @@ label{
         //border: 1px solid rgba(0,0,0,.125);
         border-radius: .25rem;
         transition: 0.3s;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
     }
 }
 
@@ -361,6 +361,17 @@ label{
 .understrap-read-more-link:hover{
     background-color: $primary;
     color: $white;
+}
+//************************************************************
+//************************************************************
+//BLOG
+.banner{
+    height: 380px;
+    div{
+        img{
+            height: 250px;
+        }
+    }
 }
 //************************************************************
 .wrapper{
