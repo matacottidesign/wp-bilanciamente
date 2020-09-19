@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav id="barra-menu" class="navbar navbar-expand-md navbar-dark bg-warning fixed-top">
+		<nav id="barra-menu" class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -76,4 +76,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- #wrapper-navbar end -->
 
-	<section style="margin-bottom: 100px;"></section>
+	<section style="margin-bottom: 110px;"></section>
