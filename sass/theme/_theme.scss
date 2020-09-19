@@ -222,6 +222,27 @@ label{
         }
     }
 }
+.category-link{
+    .category-card{
+        height: 205px;
+        border: 1px solid $primary;
+        border-radius: .25rem;
+        transition: 0.3s;
+    }
+}
+.category-link:hover{
+    .category-card{
+        background-color: $primary;
+        div{
+            svg{
+                color: $white;
+            }
+            h3{
+                color: $white;
+            }
+        }
+    }
+}
 //************************************************************
 //************************************************************
 //ARTICOLI
