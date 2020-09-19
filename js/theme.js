@@ -7018,4 +7018,18 @@ for (a = 0; a < nodeList_btnReadMore.length; a++) {
   console.log(nodeList_btnReadMore[a].innerHTML = "LEGGI ARTICOLO");
   nodeList_btnReadMore[a].classList.remove("btn-secondary");
   nodeList_btnReadMore[a].parentNode.classList.add("bottone-leggi-articolo");
+} //PARALLAX ON MOUSE MOVE
+
+
+document.addEventListener("mousemove", parallax);
+
+function parallax(e) {
+  this.querySelectorAll('.layer').forEach(layer => {
+    const speed = layer.getAttribute('data-speed');
+    const x = (window.innerWidth - e.pageX * speed) / 150;
+    const y = (window.innerHeight - e.pageY * speed) / 50;
+    console.log(x);
+    console.log(y);
+    layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  });
 }
