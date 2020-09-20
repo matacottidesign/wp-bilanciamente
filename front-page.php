@@ -26,6 +26,8 @@ get_header();
 
 <?php get_template_part('global-templates/lista-categorie'); ?>
 
+<?php get_template_part('global-templates/banner-pubblica'); ?>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?> 

@@ -183,6 +183,16 @@ label{
     height: 1000px;
     width: 100%;
 }
+.btn-pubblica{
+    background-color: inherit !important;
+}
+.btn-pubblica:hover{
+    background-color: $primary !important;
+    a{
+        color: $white;
+    }
+}
+
 .btn-tornasu{
     background-color: $secondary !important;
 }
