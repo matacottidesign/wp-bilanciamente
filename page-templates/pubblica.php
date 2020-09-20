@@ -17,13 +17,26 @@ while ( have_posts() ) :
 	the_post();?>
 
 <div class="container">
-    <div class="row">
+    <div class="row py-5">
         <div class="col-12 col-md-8">
         <h1>Invia la tua bozza di articolo e pubblica su BilanciaMente</h1>
         <?php the_content(); ?>
         </div>
         <div class="col-12 col-md-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rerum dolor, natus aliquid error deleniti optio pariatur dolore nam ex nisi molestiae ad molestias veritatis obcaecati corporis deserunt nulla rem?
+            <?php 
+            $image = get_field('immagine_info');
+            if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php endif; ?>
+            <h2><?php the_field('titolo_info') ?></h2>
+            <?php the_field('descrizione_info') ?>
+            <hr>
+            <h2>Riocordati, se hai piacere, di seguire bilanciamente anche sui social</h2>
+            <div class="d-flex justify-content-between">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </div>
 </div>
