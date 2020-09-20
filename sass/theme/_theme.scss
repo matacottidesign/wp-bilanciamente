@@ -374,6 +374,22 @@ label{
     }
 }
 //************************************************************
+//************************************************************
+//CF7
+input{
+    color: $primary !important;
+}
+textarea::placeholder{
+    color: $gray-400 !important;
+    font-style: italic;
+}
+.wpcf7-list-item{
+    margin:0 0 1rem 0 !important;
+}
+.wpcf7-submit{
+    border: inherit !important;
+}
+//************************************************************
 .wrapper{
     padding: 0;
 }

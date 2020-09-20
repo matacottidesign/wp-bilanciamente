@@ -46,7 +46,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<a style="color: #f8f9fa;" href="#">Tempo</a>
 					</li>
 					<li>
-						<a style="color: #f8f9fa;" href="#">Libri</a>
+						<a style="color: #f8f9fa;" href="#">Produttività</a>
+					</li>
+					<li>
+						<a style="color: #f8f9fa;" href="#">Crescita personale</a>
+					</li>
+					<li>
+						<a style="color: #f8f9fa;" href="#">Catalogo libri</a>
 					</li>
 					<li>
 						<a style="color: #f8f9fa;" href="#">Esercizi</a>
