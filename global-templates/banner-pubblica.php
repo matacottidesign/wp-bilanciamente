@@ -1,10 +1,10 @@
 <div class="bg-white">
-    <div class="container py-8">
+    <div class="container">
         <h2 class="text-center"><?php the_field('titolo_pubblica'); ?></h2>
         <div class="d-flex justify-content-center">
             <div class="hbar mb-4"></div>
         </div>
-        <div class="row">
+        <div class="row py-8">
             <div class="col-12 col-md-4">
                 <?php 
                 $image = get_field('immagine_pubblica');
@@ -12,7 +12,7 @@
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
-            <div class="col-12 col-md-8 text-center payoff">
+            <div class="col-12 col-md-8 text-center">
             <?php the_field('descrizione_pubblica'); ?>
                 <button class="btn btn-pubblica px-3 border border-primary rounded mt-5" type="button">
                     <?php 
