@@ -36,14 +36,14 @@ while ( have_posts() ) :
 
 
 <div class="container">
-    <div class="row">
+    <div class="row ciao">
         <div class="col-12 col-lg-8">
             
-        <div class="row">
+        <div class="row flex-column-reverse">
             
             <?php if( have_rows('ripetitore_card_blog') ):
             while( have_rows('ripetitore_card_blog') ) : the_row(); ?>
-                <div class="col-12 col-md-6 mt-3">
+                <div class="col-12 mt-3">
                     <div style="background-color: #e9dfdd;" class="type-post">
                         <div class="entry-content">
                             <!--IMG-->
@@ -63,7 +63,7 @@ while ( have_posts() ) :
                                 ?>
                                 <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
                             <?php endif; ?></h3>
-                            <h4 style="color: #adb5bd;">Tempo lettura: <?php the_sub_field('tempo_lettura');?></h4>
+                            <h4 style="color: #adb5bd;"><i class="fas fa-stopwatch"></i> <?php the_sub_field('tempo_lettura');?></h4>
                             <!--RIASSUNTO-->
                             <?php the_sub_field('riassunto_card_blog') ?>
                             <!--BOTTONE-->

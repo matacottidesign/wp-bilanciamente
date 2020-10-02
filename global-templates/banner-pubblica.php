@@ -12,7 +12,7 @@
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                 <?php endif; ?>
             </div>
-            <div class="col-12 col-md-8 text-center">
+            <div class="col-12 col-md-8 text-center payoff">
             <?php the_field('descrizione_pubblica'); ?>
                 <button class="btn btn-pubblica px-3 border border-primary rounded mt-5" type="button">
                     <?php 
